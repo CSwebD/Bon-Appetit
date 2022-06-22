@@ -32,47 +32,15 @@
     </div>
     <!--End Main Pic-->
 
-    <!--About-->
-    <div class="container">
-        <div class="about">
-            <p>The flavours of the present season are abundant on our menu.
-                <br>We constantly work hard to bring you the best: premium ingredients that have been carefully and
-                ethically selected, then freshly prepared by our fantastic chefs.
-                <br>We have gone above and beyond to elevate classic French dishes this Winter, and it is no exception.
-            </p>
 
 
-        </div>
-    </div>
-    </div>
-    <!--End About-->
-
-    <!--Menu-->
-    <div class="container">
-        <div class="menu">
-            <div class="row">
-                <div class="imageI">
-                    <img src="/img2.png" width="300">
-                </div>
-                <div class="textT">
-                    A LA CARTE lunch & dinner - DESSERT - WINE DRINKS - Weekend menu
-                    <br>
-                    <br>Events
-                    <br>
-                    <br>HAPPY HOUR - 2 FOR 1 COCKTAILS
-                    <br><br><button class="button">Menu</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End Menu-->
 
     <!--Booking-->
     <div class="container">
         <div class="booking">
             <div class="row">
                 <div class="imageI">
-                    <img src="/img3.jpg" width="300">
+                    <img src="/bon-appetit.png" width="300">
                 </div>
                 <div class="textT">
                     Dear Guests,
@@ -84,8 +52,28 @@
                     Please keep in mind when making your reservation that we might be able to fit you in if you
                     can't
                     find a reservation at your preferred time by giving us a call.
-
-                    <br><br><button class="button">BOOK A TABLE</button>
+                    <br><br><br>
+                    <form action="/index.html">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Smith"><br>
+                        <label for="pnumber">Phone number:</label><br>
+                        <input type="text" id="pnumber" name="pnumber" value="+44 ..."><br>
+                        <label for="psize">*Party size:</label><br>
+                        <select name="psize" id="psize">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select><br>
+                        <label for="Date">*Date</label><br>
+                        <input type="date" id="date" name="date"><br>
+                        <br>
+                    </form>
+                    <br><br><button class="button" onclick="alert('Message of confirmation was sent to you. Thank you! You are so Racuni!')">BOOK NOW</button>
                 </div>
             </div>
         </div>
