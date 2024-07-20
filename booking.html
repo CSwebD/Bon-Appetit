@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" type="image/png" href="bon-appetit.png">
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <title>Bon Appetit</title>
 </head>
 
@@ -18,88 +18,73 @@
     <div class="nav-bar">
         <a href="index.html" class="option">About</a>
         <a href="menu.html" class="option">Menu</a>
-        <a href="index.html" class="brand-name">Bon Apetit</a>
+        <a href="index.html" class="brand-name">Bon Appetit</a>
         <a href="booking.html" class="option">Booking</a>
         <a href="contact.html" class="option">Contact</a>
     </div>
     <!-- End Navigation Bar -->
 
     <!--Main Pic-->
-    <div class="container">
-        <div class="main-pic">
-            <img src="/img4.jpg" width="" height="580">
-        </div>
+    <div class="container main-pic" data-aos="fade-up">
+        <img src="/img4.jpg" alt="Main Picture">
     </div>
     <!--End Main Pic-->
 
-
-
-
     <!--Booking-->
-    <div class="container">
-        <div class="booking">
-            <div class="row">
-                <div class="imageI">
-                    <img src="/bon-appetit.png" width="300">
-                </div>
-                <div class="textT">
-                    Dear Guests,
+    <div class="container booking" data-aos="fade-up">
+        <div class="row">
+            <div class="imageI">
+                <img src="/bon-appetit.png" width="300">
+            </div>
+            <div class="textT">
+                Dear Guests,
+                <br><br>We look forward to welcome you soon, we do however humbly ask that you postpone your visit if you are feeling at all unwell - in this situation please do let us know so we can allocate your reservation to other guests.
+                Please keep in mind when making your reservation that we might be able to fit you in if you can't find a reservation at your preferred time by giving us a call.
+                <br><br><br>
+                <form action="/index.html">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Smith"><br>
+                    <label for="pnumber">Phone number:</label><br>
+                    <input type="text" id="pnumber" name="pnumber" value="+44 ..."><br>
+                    <label for="psize">*Party size:</label><br>
+                    <select name="psize" id="psize">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select><br>
+                    <label for="date">*Date:</label><br>
+                    <input type="date" id="date" name="date"><br>
                     <br>
-                    <br>We look forward to welcome you soon, we do however humbly ask that you postpone your visit if
-                    you
-                    are feeling at all unwell - in this situation please do let us know so we can allocate your
-                    reservation to other guests.
-                    Please keep in mind when making your reservation that we might be able to fit you in if you
-                    can't
-                    find a reservation at your preferred time by giving us a call.
-                    <br><br><br>
-                    <form action="/index.html">
-                        <label for="fname">First name:</label><br>
-                        <input type="text" id="fname" name="fname" value="John"><br>
-                        <label for="lname">Last name:</label><br>
-                        <input type="text" id="lname" name="lname" value="Smith"><br>
-                        <label for="pnumber">Phone number:</label><br>
-                        <input type="text" id="pnumber" name="pnumber" value="+44 ..."><br>
-                        <label for="psize">*Party size:</label><br>
-                        <select name="psize" id="psize">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                        </select><br>
-                        <label for="Date">*Date</label><br>
-                        <input type="date" id="date" name="date"><br>
-                        <br>
-                    </form>
-                    <br><br><button class="button" onclick="alert('Message of confirmation was sent to you. Thank you!')">BOOK NOW</button>
-                </div>
+                </form>
+                <br><br><button class="button" onclick="alert('Message of confirmation was sent to you. Thank you!')">BOOK NOW</button>
             </div>
         </div>
     </div>
     <!--End Booking-->
 
     <!--Contact-->
-    <div class="container">
-        <div class="contact">
-            777 AVEBURY
-            <br>MILTON KEYNES NW7 777
-            <br>
-            <br>BONAPPETIT@GMAIL.COM
-            <br>01907 777777
-            <br>
-            <br>opening times
-            <br>MONDAY TO SATURDAY 12PM to 11PM
-            <br>SUNDAY 12PM to 10PM (“SUNDAY MENU” AVAILABLE UNTIL 5PM)
-            <br>
-            <br>service times
-            <br>DINING 12NOON TO 10PM
-            <br>CS Cristian Sclifos © 2021 All rights reserved.
-        </div>
+    <div class="container contact" data-aos="fade-up">
+        777 AVEBURY
+        <br>MILTON KEYNES NW7 777
+        <br><br>BONAPPETIT@GMAIL.COM
+        <br>01907 777777
+        <br><br>opening times
+        <br>MONDAY TO SATURDAY 12PM to 11PM
+        <br>SUNDAY 12PM to 10PM (“SUNDAY MENU” AVAILABLE UNTIL 5PM)
+        <br><br>service times
+        <br>DINING 12NOON TO 10PM
+        <br>CS Cristian Sclifos © 2021 All rights reserved.
     </div>
     <!--End Contact-->
 
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

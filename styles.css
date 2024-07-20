@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Licorice&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,400;0,500;0,900;1,100;1,300&family=Sacramento&display=swap");
+
 html {
   background-color: var(--yellow1);
   overflow-x: hidden;
@@ -8,13 +9,15 @@ html {
   scroll-behavior: smooth;
   color: var(--black1);
 }
+
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
+
 body {
   margin: 0;
-  
 }
+
 :root {
   --yellow1: rgb(223, 208, 159);
   --yellow2: rgb(192, 180, 139);
@@ -24,6 +27,7 @@ body {
   --blue1: rgb(96, 180, 169);
   --blue2: rgb(41, 94, 107);
   --black1: rgb(66, 62, 62);
+  --white: #ffffff;
 }
 
 .container {
@@ -33,17 +37,16 @@ body {
 .row:after {
   content: "";
   display: table;
-  clear: both
+  clear: both;
 }
 
-.textT{
+.textT {
   float: left;
   width: 66.66666%;
   padding: 20px;
-  z-index: -;
 }
 
-.imageI{
+.imageI {
   float: left;
   width: 33.33333%;
   padding: 20px;
@@ -52,21 +55,19 @@ body {
   display: block;
   height: auto;
   max-width: 100%;
-  z-index: -;
-  text-align: center;
   overflow: hidden;
-
 }
-.imageI img{
+
+.imageI img {
   display: block;
   height: auto;
   max-width: 100%;
-  z-index: -;
   align-items: center;
-  transform: translateX(50%) translateY(5%)
+  transform: translateX(50%) translateY(5%);
 }
+
 .nav-bar {
-  background-color: var(--yellow1);
+  background-color: var(--yellow2);
   text-align: center;
   overflow: hidden;
   padding: 20px 100px;
@@ -79,76 +80,160 @@ body {
   font-size: 28px;
   padding: 2rem;
   color: var(--black1);
-  font-family: "Calibri";
+  font-family: "Barlow Condensed", sans-serif;
   font-weight: 500;
   text-decoration: none;
+  transition: color 0.3s;
 }
-.brand-name{
+
+.option:hover {
+  color: var(--red1);
+}
+
+.brand-name {
   font-size: 50px;
   padding: 2rem;
   color: var(--black1);
-  font-family: "Lobster";
+  font-family: "Lobster", cursive;
   font-weight: 100;
   text-decoration: none;
   z-index: 1;
+  transition: color 0.3s;
 }
+
+.brand-name:hover {
+  color: var(--red1);
+}
+
 @media screen and (max-width: 1000px) {
   .column-66,
   .column-33 {
     width: 100%;
     text-align: center;
   }
+
   .img {
     margin: auto;
   }
 }
 
-.main-pic{
-  background-image: ;
+.main-pic {
   text-align: center;
   overflow: hidden;
   background: no-repeat center;
   position: relative;
   background-size: cover;
-  z-index: -1;
+}
+
+.main-pic img {
+  width: 100%;
+  height: auto;
+  max-height: 580px;
 }
 
 .button {
   border: none;
-  color: white;
+  color: var(--white);
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
   background-color: var(--red1);
   text-align: center;
+  transition: background-color 0.3s;
 }
 
-.about{
-  /*background-color: var(--yellow3);*/
-  padding: 0px;
+.button:hover {
+  background-color: var(--red2);
+}
+
+.about {
+  background-color: var(--yellow1);
+  padding: 50px;
   text-align: center;
-  font-family: Dancing Script;
+  font-family: "Dancing Script", cursive;
   font-size: 30px;
 }
 
-.menu{
+.menu {
   background-color: var(--yellow2);
-  z-index: -1;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 50px 20px;
 }
-.menu2{
-  padding: 50px;
-  text-align: center;
-  text-decoration: none;
 
-}
-booking{
+.booking {
   background-color: var(--yellow3);
+  padding: 50px 20px;
 }
 
-.contact{
+.contact {
   background-color: var(--yellow2);
   padding: 50px;
   text-align: center;
+}
+
+/* menu */
+.menu2 {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--yellow2);
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: var(--black1);
+  font-size: 34px;
+  font-family: 'Dancing Script', cursive;
+  transition: color 0.3s;
+}
+
+.menu-items a:hover {
+  color: var(--red1);
+}
+
+/* contact */
+
+.main-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  color: var(--black1);
+  padding: 20px;
+}
+
+.contact {
+  text-align: center;
+  padding: 50px;
+  background-color: var(--yellow2);
+  color: var(--black1);
+}
+
+.contact h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--black1);
+}
+
+.contact p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.contact a {
+  color: var(--black1);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  color: var(--red1);
 }

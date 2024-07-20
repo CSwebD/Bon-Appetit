@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" type="image/png" href="bon-appetit.png">
-
-    <title>Bon Appetit</title>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <title>Bon Appetit - Contact</title>
 </head>
 
 <body>
@@ -18,51 +18,59 @@
     <div class="nav-bar">
         <a href="index.html" class="option">About</a>
         <a href="menu.html" class="option">Menu</a>
-        <a href="index.html" class="brand-name">Bon Apetit</a>
+        <a href="index.html" class="brand-name">Bon Appetit</a>
         <a href="booking.html" class="option">Booking</a>
         <a href="contact.html" class="option">Contact</a>
     </div>
     <!-- End Navigation Bar -->
 
     <!--Main Pic-->
-    <div class="container">
-        <div class="main-pic">
-            <img src="/map.jpg" width="" height="580">
-        </div>
+    <div class="container main-pic" data-aos="fade-up">
+        <img src="/map.jpg" alt="Map" width="100%" height="580">
     </div>
     <!--End Main Pic-->
 
     <!--About-->
-    <div class="container">
-        <div class="about">
-            <p>The flavours of the present season are abundant on our menu. We constantly work hard to bring you the best: 
-            premium ingredients that have been carefully and ethically selected, then freshly prepared by our fantastic chefs. We have gone above and beyond to elevate classic French dishes this Winter, and it is no exception.
-            </p>
-        </div>
-    </div>
+    <div class="container about" data-aos="fade-up">
+        <p>The flavours of the present season are abundant on our menu. We constantly work hard to bring you the best: 
+        premium ingredients that have been carefully and ethically selected, then freshly prepared by our fantastic chefs. We have gone above and beyond to elevate classic French dishes this Winter, and it is no exception.</p>
     </div>
     <!--End About-->
 
     <!--Contact-->
-    <div class="container">
-        <div class="contact">
-            777 AVEBURY
-            <br>MILTON KEYNES NW7 777
-            <br>
-            <br>BONAPPETIT@GMAIL.COM
-            <br>01907 777777
-            <br>
-            <br>opening times
-            <br>MONDAY TO SATURDAY 12PM to 11PM
-            <br>SUNDAY 12PM to 10PM (“SUNDAY MENU” AVAILABLE UNTIL 5PM)
-            <br>
-            <br>service times
-            <br>DINING 12NOON TO 10PM
-            <br>CS Cristian Sclifos © 2021 All rights reserved.
-        </div>
+    <div class="container contact" data-aos="fade-up">
+        <h1>Contact Us</h1>
+        <p>
+            <strong>Address:</strong><br>
+            777 AVEBURY<br>
+            MILTON KEYNES NW7 777
+        </p>
+        <p>
+            <strong>Email:</strong><br>
+            <a href="mailto:BONAPPETIT@GMAIL.COM">BONAPPETIT@GMAIL.COM</a>
+        </p>
+        <p>
+            <strong>Phone:</strong><br>
+            <a href="tel:+4401907777777">01907 777777</a>
+        </p>
+        <p>
+            <strong>Opening Times:</strong><br>
+            MONDAY TO SATURDAY 12PM to 11PM<br>
+            SUNDAY 12PM to 10PM (“SUNDAY MENU” AVAILABLE UNTIL 5PM)
+        </p>
+        <p>
+            <strong>Service Times:</strong><br>
+            DINING 12NOON TO 10PM
+        </p>
+        <p>
+            CS Cristian Sclifos © 2021 All rights reserved.
+        </p>
     </div>
     <!--End Contact-->
 
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
